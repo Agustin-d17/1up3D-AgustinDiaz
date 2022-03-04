@@ -1,0 +1,361 @@
+/*Estilos general*/
+.titulo, .main-servicios .servicios-titulo, .main-productos .productos-titulo, .main-contacto .contacto-titulo {
+  margin-bottom: 50px;
+  color: #334433; }
+
+/* Estilos Index */
+.bienvenida {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/Hexagon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff; }
+  .bienvenida .bienvenida-titulo {
+    display: inline;
+    text-align: center; }
+    .bienvenida .bienvenida-titulo h1 {
+      font-size: 60px;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid lightgreen; }
+  .bienvenida .bienvenida-subtitulo {
+    margin-bottom: 5px; }
+
+/* Estilo en el boton de bienvenida */
+.cssbuttons-io-button {
+  background: #017C4C;
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #017C4C;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer; }
+  .cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #005131;
+    right: 0.3em;
+    transition: all 0.3s; }
+    .cssbuttons-io-button .icon svg {
+      width: 1.1em;
+      transition: transform 0.3s;
+      color: #005131; }
+  .cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em); }
+    .cssbuttons-io-button:hover .icon svg {
+      transform: translateX(0.1em); }
+  .cssbuttons-io-button:active .icon {
+    transform: scale(0.95); }
+
+/* Estilos en la Seccion principal */
+.principal {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  background-color: #464646;
+  color: #fff; }
+  .principal .seccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px; }
+    .principal .seccion .seccion-texto {
+      width: 550px;
+      line-height: 1.5;
+      margin-right: 25px; }
+      .principal .seccion .seccion-texto h2 {
+        padding-bottom: 3px;
+        border-bottom: 1px solid lightgreen; }
+
+/* ESTILO A PAGINA SERVICIOS */
+.main-servicios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #fff; }
+  .main-servicios .servicios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .main-servicios .servicios article {
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+      min-height: 45vh;
+      margin: 15px;
+      line-height: 1.5;
+      color: #334433; }
+      .main-servicios .servicios article h3 {
+        font-size: 35px;
+        margin-bottom: 25px; }
+      .main-servicios .servicios article img {
+        width: 50px;
+        margin-bottom: 30px; }
+
+/* ESTILO EN LA PAGINA PRODUCTOS */
+.main-productos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #fff; }
+  .main-productos .productos-enlaces {
+    display: flex;
+    justify-content: center; }
+    .main-productos .productos-enlaces article {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 25%;
+      min-height: 45vh;
+      margin: 15px;
+      line-height: 1.5;
+      color: #334433;
+      transition: all 400ms ease; }
+      .main-productos .productos-enlaces article:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transform: translateY(-3%); }
+
+/* ESTILO A PAGINA CONTACTO */
+.main-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #fff; }
+  .main-contacto .contacto-titulo {
+    margin-top: 50px; }
+  .main-contacto .mapa {
+    display: flex;
+    justify-content: center; }
+    .main-contacto .mapa iframe {
+      width: 70%;
+      height: 65vh; }
+  .main-contacto .datos {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px; }
+    .main-contacto .datos article {
+      margin: 5px 55px 5px 55px;
+      color: #334433; }
+
+/* ESTILO A PAGINA NOSOTROS */
+.main-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #fff;
+  flex-direction: row;
+  align-items: center; }
+  .main-nosotros .nosotros-texto {
+    width: 40%;
+    line-height: 1.5;
+    margin-right: 25px;
+    color: #334433; }
+    .main-nosotros .nosotros-texto h2 {
+      padding-bottom: 10px;
+      margin-bottom: 25px;
+      border-bottom: 1px solid lightgreen; }
+    .main-nosotros .nosotros-texto p {
+      font-size: 16px; }
+  .main-nosotros .nosotros-imagen img {
+    width: 400px; }
+
+/* Boton Whatsapp */
+.botonWhatsApp img {
+  width: 70px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px; }
+
+/* Responsive */
+/* Smartphone */
+@media (max-width: 600px) {
+  .bienvenida .bienvenida-titulo h1 {
+    font-size: 35px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid lightgreen; }
+  .bienvenida .bienvenida-subtitulo h2 {
+    font-size: 18px; }
+  .principal .seccion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px; }
+    .principal .seccion .seccion-texto {
+      width: 325px;
+      line-height: 1.5;
+      font-size: 12px;
+      padding-top: 50px;
+      padding-bottom: 10px; }
+      .principal .seccion .seccion-texto h2 {
+        font-size: 18px;
+        margin-bottom: 5px; }
+    .principal .seccion img {
+      width: 300px;
+      padding-bottom: 20px; }
+  /* Responsive Servicios */
+  .main-servicios .servicios-titulo {
+    margin-top: 50px;
+    margin-bottom: 100px; }
+  .main-servicios .servicios {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    .main-servicios .servicios article {
+      width: 50%;
+      margin-bottom: 30px; }
+      .main-servicios .servicios article h3 {
+        font-size: 25px;
+        margin-bottom: 25px; }
+  /* Responsive Productos */
+  .main-productos .productos-titulo {
+    margin-top: 50px;
+    margin-bottom: 100px; }
+  .main-productos .productos-enlaces {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+  /* Responsive Contacto */
+  .main-contacto .contacto-titulo {
+    margin-top: 50px;
+    margin-bottom: 100px; }
+  .main-contacto .datos {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px; }
+    .main-contacto .datos article {
+      font-size: 14px; }
+  /* Responsive en Nosotros */
+  .main-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; }
+    .main-nosotros .nosotros-texto {
+      width: 60%;
+      line-height: 1.5;
+      margin-top: 30px;
+      margin-right: 0;
+      text-align: center; }
+      .main-nosotros .nosotros-texto h2 {
+        margin-bottom: 25px; }
+      .main-nosotros .nosotros-texto p {
+        font-size: 14px; }
+    .main-nosotros .nosotros-imagen img {
+      width: 250px; } }
+
+/*Tablets*/
+@media (min-width: 601px) and (max-width: 1023px) {
+  .bienvenida .bienvenida-titulo h1 {
+    font-size: 50px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid lightgreen; }
+  .bienvenida .bienvenida-subtitulo h2 {
+    font-size: 22px; }
+  .principal .seccion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px; }
+    .principal .seccion .seccion-texto {
+      width: 70vw;
+      line-height: 1.5;
+      font-size: 14px;
+      padding-top: 40px;
+      padding-bottom: 10px; }
+    .principal .seccion img {
+      width: 350px; }
+  /* Responsive Servicios */
+  .main-servicios .servicios-titulo {
+    margin-top: 50px;
+    margin-bottom: 100px; }
+  .main-servicios .servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    .main-servicios .servicios article {
+      width: 50%;
+      margin-bottom: 30px; }
+      .main-servicios .servicios article h3 {
+        font-size: 28px;
+        margin-bottom: 25px; }
+      .main-servicios .servicios article p {
+        font-size: 16px; }
+  /* Responsive Productos */
+  .main-productos .productos-titulo {
+    margin-top: 50px;
+    margin-bottom: 50px; }
+  .main-productos .productos-enlaces {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+  /* Responsive Contacto */
+  .main-contacto .contacto-titulo {
+    margin-top: 50px;
+    margin-bottom: 100px; }
+  .main-contacto .datos {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px; }
+    .main-contacto .datos article {
+      font-size: 14px; }
+  /* Responsive en Nosotros */
+  .main-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; }
+    .main-nosotros .nosotros-texto {
+      width: 75%;
+      line-height: 1.5;
+      margin-top: 30px;
+      margin-right: 0;
+      text-align: center; }
+      .main-nosotros .nosotros-texto h2 {
+        margin-bottom: 25px; }
+      .main-nosotros .nosotros-texto p {
+        font-size: 18px; }
+    .main-nosotros .nosotros-imagen img {
+      width: 300px; } }
